@@ -12,8 +12,9 @@
             xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
           }
           xmlhttp.open("GET","1.txt",false);
-          xmlhttp.send();
           document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+          xmlhttp.send();
+          
       </script>
     </head>
     <body>
