@@ -1,29 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<script>
-		function loadXMLdoc(){
-			var xmlhttp;
-			if(window.XMLHttpRequest){
-				xmlhttp = new XMLHttpRequest();
-			}else{
-				xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-			}
+  <html>
+    <head>
+      <script>
+        function loadXMLDoc()
+        {
+          var xmlhttp;
+          if (window.XMLHttpRequest)
+          {// code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp=new XMLHttpRequest();
+          }
+          else
+          {// code for IE6, IE5
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+          }
+          xmlhttp.open("GET","1.txt",false);
+          xmlhttp.send();
+ document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+        }
+      </script>
+    </head>
+    <body>
 
-			xmlhttp.onreadystatechange=function(){
-				if(xmlhttp.readyState==4 && xmlhttp.status==200){
-					document.getElementById("ajax").innerHTML=xmlhttp.responseText;
-				}
-			}
-			xmlhttp.open("GET","1.txt",true);
-			xmlhttp.send();
-		}
-	</script>
-</head>
-<body>
-	<p id="ajax">hello world</p>
-	<button onclick="loadXMLdoc()">修改内容</button>
-</body>
-</html>
+      <div id="myDiv"><h2>Let AJAX change this text</h2></div>
+      <button type="button" onclick="loadXMLDoc()">Change Content</button>
+
+    </body>
+  </html>
