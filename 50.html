@@ -1,26 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <title>Ajax</title>
+    <title>hello ajax xml</title>
     <script>
-      var xmlhttp,xmlDoc;
-       if(window.XMLHttpRequest){
-        xmlhttp = new XMLHttpRequest();
-       }else{
-        xmlhttp = new ActiveXObject("Microsof.XMLHTTP");
-       }
-      xmlhttp.onreadystatechange=function(){
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange=myfun;
+      xmlhttp.open("GET","eng.xml",true);
+      xmlhttp.send();
+      function  myfun(){
         if(xmlhttp.readyState==4 && xmlhttp.status==200){
-           document.getElementById("p1").innerHTML=xmlhttp.responseText;
+            var doc=xmlhttp.responseText;
+          document.getElementById("p1").innerHTML=doc;
           
         }
       }
-      xmlhttp.open("GET","1.txt",true);
-      xmlhttp.send();
-    </script>
+    </script> 
   </head>
   <body>
     <p id="p1"></p>
-  
   </body>
 </html>
