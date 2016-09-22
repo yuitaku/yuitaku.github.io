@@ -8,7 +8,12 @@ else
 {
 xhttp=new ActiveXObject("Microsoft.XMLHTTP");
 }
-xhttp.open("GET",dname,false);
+xhttp.onreadystatechange = function(){
+  if(xhttp.readyState==4&&xhttp.status==200){
+    xmlDoc = xhttp.responseXML;
+  }
+}
+xhttp.open("GET",dname,true);
 xhttp.send();
-return xhttp.responseXML;
+return xmlDoc;
 }
