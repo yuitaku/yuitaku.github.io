@@ -2,8 +2,6 @@
   <html>
     <head>
       <script>
-        function loadXMLDoc()
-        {
           var xmlhttp;
           if (window.XMLHttpRequest)
           {// code for IE7+, Firefox, Chrome, Opera, Safari
@@ -16,7 +14,6 @@
           xmlhttp.open("GET","1.txt",false);
           xmlhttp.send();
  document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
-        }
       </script>
     </head>
     <body>
