@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function loadXMLdoc(){
+			var xmlhttp;
+			if(window.XMLHttpRequest){
+				xmlhttp = new XMLHttpRequest();
+			}else{
+				xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+
+			xmlhttp.onreadystatechange=function(){
+				if(xmlhttp.readyState==4 && xmlhttp.status==200){
+					document.getElementById("ajax").innerHTML=xmlhttp.responseText;
+				}
+			}
+			xmlhttp.open("GET","1.txt",true);
+			xmlhttp.send();
+		}
+	</script>
+</head>
+<body>
+	<p id="ajax">hello world</p>
+	<button onclick="loadXMLdoc()">修改内容</button>
+</body>
+</html>
