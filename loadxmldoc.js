@@ -10,10 +10,10 @@ xhttp=new ActiveXObject("Microsoft.XMLHTTP");
 }
 xhttp.onreadystatechange = function(){
   if(xhttp.readyState==4&&xhttp.status==200){
-    xmlDoc = xhttp.responseXML;
+    cc = xhttp.responseXML;
   }
 }
 xhttp.open("GET",dname,true);
 xhttp.send();
-return xmlDoc;
+return cc;
 }
