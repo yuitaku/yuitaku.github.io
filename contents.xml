@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contents>
+	<article>
+		<title>看图小发现</title>
+		<author>yuitaku</author>
+		<date>2015-08-02</date>
+		<year>2015</year>
+		<month>08</month>
+		<day>02</day>
+		<categroy>Windows</categroy>
+		<img>images/a.jpg</img>
+		<content>
+			1.txt		
+		</content>
+	</article>
+             
+             <article>
+		<title>proxifier 翻译</title>
+		<author>yuitaku</author>
+		<date>2015-08-03</date>
+		<year>2015</year>
+		<month>08</month>
+		<day>03</day>
+		<categroy>Other</categroy>
+		<img>images/b.jpg</img>
+		<content>
+			2.txt		
+		</content>
+	</article>
+	
+	 <article>
+		<title>MarkDown</title>
+		<author>yuitaku</author>
+		<date>2015-08-01</date>
+		<year>2015</year>
+		<month>08</month>
+		<day>01</day>
+		<categroy>MarkDown</categroy>
+		<img>images/c.jpg</img>
+		<content>
+			3.txt		
+		</content>
+	</article>
+             
+             <article>
+		<title>东京夏日相会</title>
+		<author>yuitaku</author>
+		<date>2015-08-01</date>
+		<year>2015</year>
+		<month>08</month>
+		<day>01</day>
+		<categroy>MarkDown</categroy>
+		<img>images/d.jpg</img>
+		<content>
+			4.txt		
+		</content>
+	</article>
+
+</contents>
