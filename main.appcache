@@ -1,0 +1,11 @@
+CACHE MANIFEST
+/main.css
+/contents.xml
+/js.js
+/1.txt
+
+NETWORK:
+*
+
+FALLBACK:
+/html/ /offline.html
